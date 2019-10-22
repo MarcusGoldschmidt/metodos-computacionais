@@ -13,8 +13,11 @@ func CalculaX(a float64, b float64) float64 {
 	return (a + b) / 2
 }
 
-func main() {
+func CalculaXposisaoFalse(a float64, b float64) float64 {
+	return ((a * f(b)) - (b * f(a))) / (f(b) - f(a))
+}
 
+func main() {
 	a := float64(1)
 
 	b := float64(-1)
